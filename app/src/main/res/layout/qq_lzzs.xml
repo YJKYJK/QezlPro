@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <Button
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textColor="#ff2906"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:id="@+id/lzzs_gxlz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="一键亮钻"
+        android:onClick="lzzs_yjlz"/>
+
+    <TextView
+        android:textColor="#ffff33"
+        android:textSize="18sp"
+        android:background="#58ed6e"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="个性自定义图标亮钻"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:text="请选择亮钻类型："
+        android:textColor="#ffff33"
+        android:textSize="18sp"
+        android:background="#58ed6e"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:gravity="center"
+        android:textSize="20dp"
+
+        android:background="@drawable/qt"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lzzs_lzlx"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="lzzs_xztp">
+    <ImageView
+        android:id="@+id/lzzs_tp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/tpc1"/>
+        <TextView
+            android:textSize="18dp"
+            android:text="选择图片"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/button"
+        android:onClick="lzzs_dl"
+        android:text="点亮"
+        android:textColor="#00f6f2"
+        android:textSize="20sp" />
+
+    <Button
+        android:textColor="#00f6f2"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:onClick="lzzs_gblz"
+        android:background="@drawable/button"
+        android:text="关闭亮钻"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        />
+
+
+
+</LinearLayout>

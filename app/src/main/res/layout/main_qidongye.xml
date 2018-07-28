@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/qdy">
+
+
+    <TextView
+        android:textColor="#ffffff"
+        android:text="企鹅助理5.0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_bbh"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:layout_marginBottom="14dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="TextView"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="39dp"
+        android:id="@+id/xsrq"
+        android:layout_above="@+id/main_bbh"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="22:33"
+        android:textColor="#ffffff"
+        android:textSize="90sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/xssj"
+        android:layout_marginBottom="25dp"
+        android:layout_above="@+id/xsrq"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

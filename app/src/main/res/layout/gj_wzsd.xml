@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <EditText
+        android:padding="5dp"
+
+
+        android:hint="请输入网址 带http://"
+        android:background="@drawable/edit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/wzsd_wz"/>
+    <Spinner
+        android:id="@+id/wzsd_ym"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Spinner>
+
+
+    <Button
+        android:textSize="20sp"
+        android:textColor="#0188f6"
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:onClick="wzsd_sc"
+        android:text="生成" />
+
+    <EditText
+        android:padding="5dp"
+android:layout_marginTop="10dp"
+
+        android:hint="生成结果"
+        android:background="@drawable/edit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/wzsd_jg"/>
+
+</LinearLayout>

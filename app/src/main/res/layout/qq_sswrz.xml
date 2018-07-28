@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <TextView
+        android:textColor="#09fcc8"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="说说万人赞生成成功后直接到QQ空间粘贴发布即可\n评论区万人赞粘贴至说说的评论区发布即可"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:hint="说说内容"
+        android:inputType="textMultiLine"
+        android:id="@+id/sswrz_ssnr"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="#09fcc8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="人数"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="默认人数"
+            android:checked="true"
+            android:id="@+id/sswrz_mrrs"/>
+
+        <RadioButton
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自定义人数"
+            android:id="@+id/sswrz_zdyrs"/>
+        <EditText
+            android:visibility="invisible"
+            android:background="@drawable/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="    14亿    "
+            android:id="@+id/sswrz_rs"/>
+
+    </LinearLayout>
+    <Button
+        android:textSize="20sp"
+        android:background="@drawable/button"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 说说万人赞 "
+        android:id="@+id/sswrz_sc1"/>
+
+    <Button
+        android:textSize="20sp"
+        android:background="@drawable/button"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 评论区万人赞 "
+        android:id="@+id/sswrz_sc2"/>
+
+</LinearLayout>

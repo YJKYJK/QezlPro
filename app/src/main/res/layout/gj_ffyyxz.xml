@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F5F7">
+
+    <EditText
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edit"
+        android:gravity="center"
+        android:hint="输入歌手/歌名"
+        android:id="@+id/ffyyxz_ss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QQ音乐搜索"
+            android:textSize="20sp"
+            android:textColor="#00ffb2"
+            android:onClick="ffyyxz_qq"
+            android:background="@drawable/button"/>
+
+        <Button
+            android:onClick="ffyyxz_kgyy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="酷狗音乐搜索"
+            android:textSize="20sp"
+            android:textColor="#00ffb2"
+            android:background="@drawable/button"/>
+
+
+
+    </LinearLayout>
+
+    <ListView
+        android:divider="#00000000"
+        android:dividerHeight="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ffyyxz_list"/>
+
+
+</LinearLayout>

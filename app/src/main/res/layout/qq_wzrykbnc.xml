@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <TextView
+        android:textSize="16sp"
+        android:textColor="#2a4deb"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用方法：(必看)  点击下面按钮，生成后复制到王者荣耀中，如果更改的时候提示名字重复就回来继续生成一个\n\n提示：名字数量很多但却有限，随着使用成功的人数越多名字重复的概率也就越大所以且用且珍惜\n(现在里面大概可以生成30多万个空白名称，后期会通过优化算法和增加新的字符来增加数量)"/>
+
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button"
+        android:onClick="wzrykbnc_hlsc"
+        android:text="点击生成(混合模式)"
+        android:textColor="#00e6ff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+        android:onClick="wzrykbnc_mstwosc"
+        android:text="点击生成(模式2)"
+        android:textColor="#00e6ff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+        android:onClick="wzrykbnc_msthreesc"
+        android:text="点击生成(模式3)"
+        android:textColor="#00e6ff"
+        android:textSize="20sp" />
+</LinearLayout>

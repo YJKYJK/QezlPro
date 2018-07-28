@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <EditText
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:hint="输入QQ号"
+        android:ems="10"
+        android:textSize="20sp"
+        android:id="@+id/xjcs_qq" />
+
+    <Button
+        android:background="@drawable/button"
+        android:text="点击测试"
+        android:textColor="#84ffc8"
+        android:textSize="25sp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/xjcs_cs"
+        android:layout_marginBottom="10dp"
+       />
+
+    <EditText
+
+        android:background="@drawable/edit"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:inputType="textMultiLine"
+        android:hint="测试结果"
+
+        android:textSize="20sp"
+        android:id="@+id/xjcs_jg" />
+</LinearLayout>

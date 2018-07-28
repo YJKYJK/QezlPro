@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="10dp"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:textColor="#00e3f7"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标题信息:"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:background="@drawable/edit"
+                android:textColor="#00e3f7"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:hint="请输入标题"
+                android:id="@+id/zdyfx_bt"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:textColor="#00e3f7"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="详情内容:"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:background="@drawable/edit"
+                android:textColor="#00e3f7"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:hint="请输入详情内容"
+                android:id="@+id/zdyfx_xq"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:textColor="#00e3f7"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="图片链接:"
+                android:textSize="20sp"/>
+
+
+            <EditText
+                android:background="@drawable/edit"
+                android:textColor="#00e3f7"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:hint="请输入图片链接"
+                android:id="@+id/zdyfx_tp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/zdyfx_wltp"
+            android:checked="true"
+            android:layout_marginRight="10dp"
+            android:textSize="16dp"
+            android:textColor="#ff0000"
+            android:text="网络图片"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/zdyfx_bdtp"
+            android:textSize="16dp"
+            android:textColor="#ff0000"
+            android:text="本地图片"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:textColor="#00e3f7"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="跳转链接:"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:background="@drawable/edit"
+                android:id="@+id/zdyfx_lj"
+                android:textColor="#00e3f7"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:hint="请输入跳转链接"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+     <Button
+
+         android:background="@drawable/button"
+    android:text="生成"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:onClick="zdyfx_sc"/>
+     <Button
+         android:background="@drawable/button"
+      android:text="清空"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+         android:onClick="zdyfx_qk"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

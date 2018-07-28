@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#00f6b4"
+                    android:text="二维码内容" />
+
+                <EditText
+                    android:id="@+id/gxewm_contents"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="企鹅助理Pro" />
+
+                <TextView
+                    android:textColor="#00f6b4"
+                    android:id="@+id/gxewm_size_px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="二维码大小-800px" />
+
+                <SeekBar
+
+                    android:id="@+id/gxewm_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:max="1900"
+                    android:progress="700" />
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="#00f6b4"
+                        android:textSize="15sp"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+                        android:text="背景边框大小:" />
+
+                    <EditText
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:id="@+id/gxewm_bjbksize"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+
+                        android:hint="10"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="#00f6b4"
+                        android:textSize="15sp"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+                        android:text="二维码像素(0-100):" />
+
+                    <EditText
+
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:id="@+id/gxewm_ewmxs"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+
+                        android:hint="50"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <CheckBox
+                    android:textSize="18sp"
+                    android:textColor="#f24040"
+                    android:checked="true"
+                    android:id="@+id/gxewm_sfwyd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="是否为圆点" />
+
+                <CheckBox
+                    android:textSize="18sp"
+                    android:textColor="#f53434"
+                    android:id="@+id/gxewm_sfzdys"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="是否根据背景自动填充二维码颜色" />
+
+                <LinearLayout
+                    android:id="@+id/gxewm_ysxz"
+
+                    android:saveEnabled="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <LinearLayout
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/gxewm_textkb"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:text="二维码空白颜色: " />
+
+                <Button
+                    android:id="@+id/gxewm_kbcolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/gxewm_textnr"
+
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+                        android:text="     二维内容颜色: " />
+
+                    <Button
+                        android:id="@+id/gxewm_ewmnrcolor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:textColor="#00f6b4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="背景图片" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:textSize="18sp"
+                        android:textColor="#0092fe"
+                        android:background="@drawable/button"
+                        android:id="@+id/gxewm_bgimage"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="选择背景图片" />
+
+                    <Button
+                        android:onClick="gxewm_movebg"
+                        android:textSize="18sp"
+                        android:textColor="#0092fe"
+                        android:background="@drawable/button"
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="删除背景图片"/>
+                    </LinearLayout>
+
+
+                <TextView
+                    android:textColor="#00f6b4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="logo 图片" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:textSize="18sp"
+                        android:textColor="#0092fe"
+                        android:background="@drawable/button"
+                        android:id="@+id/gxewm_logoimage"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="选择logo"/>
+
+                    <Button
+                        android:textSize="18sp"
+                        android:textColor="#0092fe"
+                        android:background="@drawable/button"
+                        android:onClick="gxewm_movelogo"
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="删除logo"/>
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:textColor="#0092fe"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:onClick="gj_gxewm_sc"
+            android:text="生      成" />
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

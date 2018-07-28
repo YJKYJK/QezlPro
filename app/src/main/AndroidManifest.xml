@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="yanyan.qezlpro">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name='android.permission.CAMERA'/>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".main_qidongye">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="yanyan.qezlpro.MainActivity"></activity>
+        <activity android:name=".qq_lszt"></activity>
+        <activity android:name=".qq_ybrmyfss"></activity>
+        <activity android:name=".qq_xjcs"></activity>
+        <activity android:name=".qq_lqq"></activity>
+        <activity android:name=".qq_kjsb"></activity>
+        <activity android:name=".qq_cjdm"></activity>
+        <activity android:name=".qq_z"></activity>
+        <activity android:name=".qq_sswrz"></activity>
+        <activity android:name=".qq_qzlt"></activity>
+        <activity android:name=".qq_cyxjc"></activity>
+        <activity android:name=".qq_chdm"></activity>
+        <activity android:name=".qq_zdyfx"></activity>
+        <activity android:name=".qq_lzzs"></activity>
+        <activity android:name=".qq_wjdm"></activity>
+        <activity android:name=".qq_wzrykbzt"></activity>
+        <activity android:name=".qq_egfx"></activity>
+        <activity android:name=".qq_jbqp"></activity>
+
+
+        <activity android:name=".gj_tszt"></activity>
+        <activity android:name=".okhttp"></activity>
+        <activity android:name=".gj_hcp"></activity>
+        <activity android:name=".gj_wzsd"></activity>
+        <activity android:name=".gj_kzzs"></activity>
+        <activity android:name=".gj_bbzz"></activity>
+        <activity android:name=".gj_ipcx"></activity>
+        <activity android:name=".gj_cts"></activity>
+        <activity android:name=".gj_hqwyym"></activity>
+        <activity android:name=".gj_qqzs"></activity>
+
+        <activity android:name=".gj_zbtp"></activity>
+        <activity android:name=".gj_tbk"></activity>
+
+        <activity android:name=".gj_xzscq"></activity>
+
+        <activity android:name=".gj_ffyyxz"></activity>
+        <activity android:name=".gj_spzm"></activity>
+        <activity android:name=".gj_rjzy"></activity>
+
+        <activity android:name=".gj_gxewm"></activity>
+        <activity android:name=".gj_gxewmjg"></activity>
+
+        <activity android:name=".wd_xzlb"></activity>
+
+
+        <activity android:name=".main">
+
+
+
+
+
+
+            <!--android:label="@string/app_name">-->
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent100000001"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5950dbc7f29d987a93000d53"></meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng"></meta-data>
+
+        <service android:name=".GN_music"></service>
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.yanyan.qezlpro.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

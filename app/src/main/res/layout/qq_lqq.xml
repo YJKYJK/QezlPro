@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+    <EditText
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:hint="输入QQ号"
+        android:ems="10"
+        android:textSize="20sp"
+        android:id="@+id/lqq_qq" />
+    <EditText
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:hint="确认QQ号"
+        android:ems="10"
+        android:textSize="20sp"
+        android:id="@+id/lqq_qq2" />
+
+    <Spinner
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/lqq_spinner" />
+
+    <Button
+        android:background="@drawable/button"
+        android:text="开始"
+        android:textColor="#84ffc8"
+        android:textSize="25sp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/lqq_ks"
+        android:layout_marginBottom="10dp"
+        />
+</LinearLayout>

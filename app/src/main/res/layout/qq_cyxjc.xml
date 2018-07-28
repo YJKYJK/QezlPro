@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+        android:text="纯教程"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textColor="#00fefa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tpa6"/>
+
+    <TextView
+        android:text="1.先把对方备注改成**的**\n2.然后戳他一下\n3.然后再改回原来的备注即可"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textColor="#00fefa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+</LinearLayout>

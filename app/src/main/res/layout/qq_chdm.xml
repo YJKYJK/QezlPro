@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#00ffff"
+        android:text="说明\n如：前缀输入：助理\n后缀输入：并给了你100块\n将生成的内容改成QQ群名片,在撤回消息后别人看到的就是：\n助理撤回了一条消息并给了你100块"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:textColor="#00ffff"
+    android:text="名字前缀："/>
+    <EditText
+
+        android:textSize="20sp"
+        android:layout_width="160dp"
+        android:layout_height="39dp"
+        android:hint=" 输入名字前缀 "
+        android:background="@drawable/edit"
+        android:id="@+id/chdm_qz"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#00ffff"
+            android:text="名字后缀："
+            />
+        <EditText
+
+            android:textSize="20sp"
+            android:layout_width="160dp"
+            android:layout_height="39dp"
+            android:hint=" 输入名字后缀 "
+            android:background="@drawable/edit"
+            android:id="@+id/chdm_hz"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:textSize="20sp"
+        android:textColor="#00ffff"
+        android:layout_height="wrap_content"
+        android:text="   生成   "
+        android:background="@drawable/button"
+        android:id="@+id/chdm_sc"/>
+
+
+
+
+
+</LinearLayout>

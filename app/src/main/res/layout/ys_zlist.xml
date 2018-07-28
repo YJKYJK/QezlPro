@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_function_button"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:id="@+id/ys_z_tp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:id="@+id/ys_z_t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标题1"
+                android:textColor="#00b7ff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/ys_z_t2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="btccccc"
+                android:textColor="#E0E1E3" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

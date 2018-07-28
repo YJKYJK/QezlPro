@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+   >
+    <TextView
+        android:textColor="#4fe3e0"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QQ空间设备代码"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:text="选择设备："
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/kjsb_xzsb"
+            />
+        <Spinner
+            android:background="@drawable/qt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/qjsb_spinner"
+        />
+    </LinearLayout>
+    <EditText
+        android:background="@drawable/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kjsb_xh"
+        android:hint="输入设备号 如：小米6"
+        android:layout_marginBottom="10dp"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="是否蓝色"
+        android:textSize="20sp"
+        android:checked="false"
+        android:id="@+id/kjsb_sfls"
+        android:layout_marginBottom="10dp"/>
+    <Button
+        android:textSize="20dp"
+        android:background="@drawable/button"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/kjsb_sc"
+        android:text="生成"/>
+
+    <TextView
+        android:textColor="#4fe3e0"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QQ空间特殊代码-点击复制"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="match_parent">
+        <ListView
+            android:background="@drawable/qt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="afterDescendants"
+            android:id="@+id/kjsb_list"
+            />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp">
+        <Button
+            android:background="@drawable/button"
+
+            android:textSize="18sp"
+            android:textColor="#84ffc8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 超级装逼代码 "
+            android:onClick="tzym"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+
+            android:textSize="18sp"
+            android:textColor="#84ffc8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 打赏红包代码 "
+            android:onClick="tzym"
+            android:id="@+id/kjsb_dshbdm"/>
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+
+                android:textSize="18sp"
+                android:textColor="#84ffc8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="打赏冰淇淋代码"
+                android:onClick="tzym"
+                />
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+
+                android:id="@+id/kjsb_sswrz"
+                android:textSize="18sp"
+                android:textColor="#84ffc8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 说说万人赞 "/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

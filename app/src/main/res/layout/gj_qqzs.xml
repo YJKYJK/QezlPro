@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="刷球球棒棒糖/彩蛋"
+        android:textColor="#152eec"
+        android:textSize="25sp"
+        android:gravity="center"/>
+
+    <EditText
+        android:padding="8dp"
+        android:gravity="center"
+        android:hint="请输入球球链接"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit"
+        android:id="@+id/qqzs_qqlj"/>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:text="开始提交"
+        android:textColor="#11ffe7"
+        android:textSize="20sp"
+        android:onClick="qqzs_tj"/>
+
+    0<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="彩色昵称"
+            android:textColor="#152bec"
+            android:textSize="25sp"
+            android:background="#5da94e"
+            />
+
+        <EditText
+            android:id="@+id/qqzs_mc"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit"
+            android:hint="输入游戏昵称" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="颜色："
+                android:textSize="20sp" />
+
+            <Button
+                android:onClick="qqzs_ysxz"
+                android:id="@+id/qqzs_ys"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="#ff6bf9df"
+
+                android:text=""
+                android:textColor="#f20909"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:onClick="qqzs_sc"
+            android:text="生成"
+            android:textColor="#0fecec"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
